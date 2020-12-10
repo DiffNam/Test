@@ -1,0 +1,67 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        12/11/2020  01:11:35  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+E:\SOFTWARE\KEIL_V5\C51\BIN\BL51.EXE .\Objects\CS.obj TO .\Objects\cs PRINT (.\Listings\cs.m51) RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\CS.obj (CS)
+  E:\SOFTWARE\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  .\Objects\cs (CS)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     000CH     UNIT         ?C_C51STARTUP
+            CODE    000FH     0001H     UNIT         ?PR?MAIN?CS
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\cs (CS)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?CS
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\cs (CS)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        CS
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:000FH         PUBLIC        main
+  -------         PROC          MAIN
+  C:000FH         LINE#         3
+  C:000FH         LINE#         4
+  C:000FH         LINE#         6
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        CS
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0001H BYTE ( 0%) *
+******************************************************************************
+BL51 BANKED LINKER/LOCATER V6.22                                                      12/11/2020  01:11:35  PAGE 2
+
+
+
+Program Size: data=9.0 xdata=0 code=16
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
